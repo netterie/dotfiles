@@ -10,7 +10,8 @@ dotfiles for configuration
 - Examples available at https://dotfiles.github.io
 - Search Github with _filename:.RProfile_
 
-## Reminders about environment variables
+# Environment variables
+
 For example:
 
 R_HISTSIZE=100000
@@ -22,4 +23,6 @@ R_LIBS_USER=~/R/%p/%v
 ```r
 usethis::browse_github_pat()
 usethis::edit_r_environ()
+# Then restart R
+Sys.getenv("GITHUB_PAT")
 ```
